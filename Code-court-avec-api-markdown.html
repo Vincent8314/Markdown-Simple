@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éditeur Markdown</title>
+    <!-- Ajout de markdown-it -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js"></script>
+    <!-- Ajout du plugin markdown-it-emoji -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it-emoji/2.0.2/markdown-it-emoji.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header><h1 class="h1">Markdown Simple</h1></header>
+    <div class="container">
+        <div class="editor-section">
+            <div class="section-header">
+                <h2 class="h2">Éditeur</h2>
+                <div class="section-controls">
+                    <button id="toggle-upload">Téléverser</button>
+                    <button id="copy-markdown">Copier</button>
+                    <button id="download-markdown">Télécharger</button>
+                </div>
+            </div>
+            <div id="upload-container">
+                <div class="drop-zone" id="drop-zone">
+                    <p>Déposez votre fichier Markdown ici ou cliquez pour sélectionner</p>
+                    <input type="file" accept=".md,.markdown,.txt" class="file-input" id="file-input">
+                </div>
+            </div>
+            <textarea id="editor" placeholder="Écrivez ou collez votre markdown ici..."></textarea>
+        </div>
+        <div class="preview-section">
+            <div class="section-header">
+                <h2>Aperçu</h2>
+                <div class="section-controls">
+                    <button id="export-html-btn">Exporter HTML</button>
+                </div>
+            </div>
+            <div id="preview"></div>
+        </div>
+    </div>
+    
+    <!-- Popup pour afficher et exporter le HTML -->
+    <div id="export-popup">
+        <div class="popup-content">
+            <div class="popup-header">
+                <div class="popup-title">Exporter le contenu HTML</div>
+                <span class="close-popup">&times;</span>
+            </div>
+            <div class="popup-body">
+                <textarea id="html-content" class="code-area" readonly></textarea>
+            </div>
+            <div class="popup-footer">
+                <button id="copy-html-btn">Copier</button>
+                <button id="download-html-btn">Télécharger</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js">
+    </script>
+</body>
+</html>
