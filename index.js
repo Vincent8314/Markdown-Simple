@@ -45,27 +45,27 @@
 
         // Fonction pour charger un contenu par défaut
         function loadDefaultContent() {
-            editor.value = `# Guide complet du Markdown
+            editor.value = `# Complete Markdown Guide
 
-## Formatage de texte basique
+## Basic Text Formatting
 
-### Démonstration de toutes les fonctionnalités
+### Demonstration of All Features
 
-Le texte normal s'écrit simplement comme ceci.
+Normal text is simply written like this.
 
-*Texte en italique* ou *autre façon en italique*
+*Italic text* or *another way to italicize*
 
-**Texte en gras** ou **autre façon en gras**
+**Bold text** or **another way to bold**
 
-***Texte en gras et italique***
+***Bold and italic text***
 
-~Texte surligné~
+~Highlighted text~
 
-[HTML](https://fr.wikipedia.org/wiki/HTML) est le langage du web.
+[HTML](https://en.wikipedia.org/wiki/HTML) is the language of the web.
 
-**Markdown** est un langage de balisage léger créé en 2004.
+**Markdown** is a lightweight markup language created in 2004.
 
-\`Code inline comme ceci\`
+\`Inline code like this\`
 
 \`\`\`python
 def hello_world():
@@ -73,49 +73,48 @@ def hello_world():
     return True
 \`\`\`
 
-> Citation simple sur une ligne
+> Single-line quote
 
->"La vie est un mystère qu'il faut vivre, et non un problème à résoudre" -- Gandhi
+>"Life is a mystery to be lived, not a problem to be solved" -- Gandhi
 
-Liste de tâches :
-- [ ] Tâche à faire
-- [x] Tâche terminée
-- [X] Autre tâche terminée
+Task list:
+- [ ] Task to do
+- [x] Completed task
+- [X] Another completed task
 
+Bulleted list:
+- First item
+- Second item
+  - Sub-item
+- Third item
 
-Liste à puces :
-- Premier élément
-- Deuxième élément
-  - Sous-élément
-- Troisième élément
-
-Liste numérotée :
-1. Première étape
-2. Deuxième étape
-3. Dernière étape
+Numbered list:
+1. First step
+2. Second step
+3. Final step
 
 1. Lorem ipsum dolor sit amet
 1. Consectetur adipiscing elit
 1. Integer molestie lorem at massa
 1. Facilisis in pretium nisl aliquet
 
-[Lien vers Google](https://www.google.com)
+[Link to Google](https://www.google.com)
 
 https://www.example.com
 
-![Description d'une image](https://example.com/image.jpg)
+![Image description](https://example.com/image.jpg)
 
 ---
 
-~~Texte barré~~
+~~Strikethrough text~~
 
-## Emoji Démonstration :smiley:
+## Emoji Demonstration :smiley:
 
-Voici quelques emoji :
-- :joy: - Rire aux larmes
-- :heart: - Cœur
-- :thumbsup: - Pouce en l'air
-- :cake: - Gâteau
+Here are some emojis:
+- :joy: - Laughing out loud
+- :heart: - Heart
+- :thumbsup: - Thumbs up
+- :cake: - Cake
 
 | Option | Description |
 | ------ | ----------- |

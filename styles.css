@@ -30,7 +30,7 @@
             padding: 20px;
         }
 
-        @media (max-width: 900px) {
+        @media (max-width: 1000px) {
     .container {
         flex-direction: column;
         gap: 10px; /* optional, smaller gap for vertical layout */
@@ -60,6 +60,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         .section-header h2 {
@@ -188,11 +189,28 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             padding: 5px 10px;
-            font-size: 12px;
+            font-size: 0.8rem;
+            letter-spacing: 0.05rem;
+            font-weight: 600;
             cursor: pointer;
             transition: background-color 0.2s;
         }
-
+        @media (max-width: 1050px) {
+            button {
+                font-size: 0.7rem;
+            }
+        }
+        @media (max-width: 60px) {
+            button {
+                font-size: 0.6rem;
+            }
+        }
+        @media (max-width: 480px) {
+            button {
+                font-size: 0.6rem;
+            }
+        }
+        
         button:hover {
             background-color: #e0e0e0;
         }
