@@ -13,6 +13,15 @@
         const htmlContentArea = document.getElementById('html-content');
         const copyHtmlBtn = document.getElementById('copy-html-btn');
         const downloadHtmlBtn = document.getElementById('download-html-btn');
+        const clearEditorBtn = document.getElementById('clear-editor');
+        
+        clearEditorBtn.addEventListener('click', function() {
+            if (confirm('Voulez-vous vraiment effacer tout le contenu de l’éditeur ?')) {
+                editor.value = '';
+                updatePreview();
+            }
+        });
+
 
         // Initialisation de markdown-it
         const md = window.markdownit({

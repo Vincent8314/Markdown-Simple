@@ -48,6 +48,10 @@
             overflow: hidden;
         }
 
+        button[id="clear-editor"] {
+            color:#0066cc;
+        }
+
         .section-header {
             padding: 12px 20px;
             background: #f8f9fa;
