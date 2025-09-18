@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Éditeur Markdown</title>
-    <!-- Ajout de markdown-it -->
+    <title>Markdown Editor</title>
+    <!-- Added markdown-it -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.1/markdown-it.min.js"></script>
-    <!-- Ajout du plugin markdown-it-emoji -->
+    <!-- Added markdown-it-emoji plugin -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it-emoji/2.0.2/markdown-it-emoji.min.js"></script>
     <link rel="stylesheet" href="./styles.css">
     <style>
@@ -14,11 +14,11 @@
     </style>
 </head>
 <body>
-    <header><h1 class="h1">Markdown Simple</h1></header>
+    <header><h1 class="h1">Simple Markdown</h1></header>
     <div class="container">
         <div class="editor-section">
             <div class="section-header">
-                <h2 class="h2">Éditeur</h2>
+                <h2 class="h2">Editor</h2>
                 <div class="section-controls">
                     <button id="clear-editor">Clear</button>
                     <button id="toggle-upload">Upload</button>
@@ -28,36 +28,36 @@
             </div>
             <div id="upload-container">
                 <div class="drop-zone" id="drop-zone">
-                    <p>Déposez votre fichier Markdown ici ou cliquez pour sélectionner</p>
+                    <p>Drop your Markdown file here or click to select</p>
                     <input type="file" accept=".md,.markdown,.txt" class="file-input" id="file-input">
                 </div>
             </div>
-            <textarea id="editor" placeholder="Écrivez ou collez votre markdown ici..."></textarea>
+            <textarea id="editor" placeholder="Write or paste your markdown here..."></textarea>
         </div>
         <div class="preview-section">
             <div class="section-header">
-                <h2>Aperçu</h2>
+                <h2>Preview</h2>
                 <div class="section-controls">
-                    <button id="export-html-btn">Exporter HTML</button>
+                    <button id="export-html-btn">Export HTML</button>
                 </div>
             </div>
             <div id="preview"></div>
         </div>
     </div>
     
-    <!-- Popup pour afficher et exporter le HTML -->
+    <!-- Popup to display and export HTML -->
     <div id="export-popup">
         <div class="popup-content">
             <div class="popup-header">
-                <div class="popup-title">Exporter le contenu HTML</div>
+                <div class="popup-title">Export HTML content</div>
                 <span class="close-popup">&times;</span>
             </div>
             <div class="popup-body">
                 <textarea id="html-content" class="code-area" readonly></textarea>
             </div>
             <div class="popup-footer">
-                <button id="copy-html-btn">Copier</button>
-                <button id="download-html-btn">Télécharger</button>
+                <button id="copy-html-btn">Copy</button>
+                <button id="download-html-btn">Download</button>
             </div>
         </div>
     </div>
