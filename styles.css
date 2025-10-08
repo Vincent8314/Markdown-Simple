@@ -90,6 +90,19 @@
             border: 1px solid var(--border-color);
         }
 
+        #editor,
+        #preview {
+        overflow: auto;              /* keep scrolling */
+        scrollbar-width: none;       /* Firefox */
+        -ms-overflow-style: none;    /* IE/old Edge */
+        }
+
+        #editor::-webkit-scrollbar,
+        #preview::-webkit-scrollbar {
+        display: none;               /* Chrome, Safari, Opera */
+        }
+
+
         button[id="clear-editor"] {
             color: var(--accent-color);
         }
